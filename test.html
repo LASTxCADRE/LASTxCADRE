@@ -32,22 +32,24 @@
 <script>
 // The detector will show a warning if the current browser does not support WebGL.
 if (!Detector.webgl) {
-  Detector.addGetWebGLMessage();
-}
+          Detector.addGetWebGLMessage();
+      }
 
-// All of these variables will be needed later, just ignore them for now.
-var container;
-var camera, controls, scene, renderer;
-var lighting, ambient, keyLight, fillLight, backLight;
-var windowHalfX = window.innerWidth / 2;
-var windowHalfY = window.innerHeight / 2;
+      var container;
 
-init();
-animate();
+      var camera, controls, scene, renderer;
+      var lighting, ambient, keyLight, fillLight, backLight;
 
-function init() {
-  container = document.createElement('div');
-  document.body.appendChild(container);
+      var windowHalfX = window.innerWidth / 2;
+      var windowHalfY = window.innerHeight / 2;
+
+      init();
+      animate();
+
+      function init() {
+
+          container = document.createElement('div');
+          document.body.appendChild(container);
 
           /* Camera */
 
