@@ -73,10 +73,12 @@ if (!Detector.webgl) {
            backLight = new THREE.DirectionalLight(0xffffff, 1.0);
            backLight.position.set(100, 0, -100).normalize();
 
+           material1 = new THREE.MeshPhongMaterial({shading: THREE.FlatShading, color: 0xcf7575, ambient: 0x414141, emissive: 0xaa5353, specular: 0x878787, shininess: 30, side: THREE.DoubleSide});
+
            /* Model */
 
 // Materials
-            material1 = new THREE.MeshPhongMaterial({shading: THREE.FlatShading, color: 0xcf7575, ambient: 0x414141, emissive: 0xaa5353, specular: 0x878787, shininess: 30, side: THREE.DoubleSide});
+
            // var mtlLoader = new THREE.MTLLoader();
            // mtlLoader.setBaseUrl('assets/');
            // mtlLoader.setPath('assets/');
@@ -92,7 +94,7 @@ if (!Detector.webgl) {
                objLoader.setPath('assets/');
                objLoader.load('Benjamin_Revell_Flower.obj', function (object) {
 
-                   scene.add(object, material);
+                   scene.add(object);
 
                });
 

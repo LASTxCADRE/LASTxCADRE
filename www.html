@@ -3,15 +3,32 @@
 <head>
 <title>LASTxCADRE</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="js/three.js"></script>
-    <script src="js/Detector.js"></script>
-    <script src="js/OrbitControls.js"></script>
-    <script src="js/OBJLoader.js"></script>
-    <script src="js/MTLLoader.js"></script>
+<link rel="stylesheet" href="demo-styles.css">
 
+<!-- Loads <model-viewer> for modern browsers: -->
+<script type="module"
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+</script>
+
+<!-- Loads <model-viewer> for old browsers like IE11: -->
+<script nomodule
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
+<!-- The following libraries and polyfills are recommended to maximize browser support -->
+<!-- NOTE: you must adjust the paths as appropriate for your project -->
+
+<!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+<!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+<!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+<script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
@@ -66,6 +83,11 @@
       text-align: left;
     }
 
+    .models {
+      width: 70%;
+      height:40vh;
+    }
+
 </style>
 </head>
 <body>
@@ -87,12 +109,33 @@
 <br><br>
 
 <div class="plants">
+<br><br>
+
+<model-viewer class="models" src="assets/exported.glb"
+            auto-rotate camera-controls
+            alt="Hederacota"
+            background-color="#04D99D"
+            shadow-intensity="1"
+            stage-light-intensity="2" environment-intensity="5">
+</model-viewer>
 <br>
-<div style="width: 100%; padding-bottom: 56.25%; position: relative"> <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> <iframe src="https://app.modelo.io/embedded/HkXdmwtnyp?viewport=false&autoplay=true" style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen allowfullscreen ></iframe> </div> </div>
   <p><b>Hederacota</b><br>My plant is a splice between an ivy and a fungus to create a plant to absorb the oil from the Earth from oil spills. The plant was created by humans after studying the oil absorbtion properties of certain fungi. Splicing these fungi with ivy genes allowed the plant to absorb oil much faster and grow at a much faster rate. The plant is also able to survive in most temperate climates, but unfortunately struggles in sub-zero climates. The plant is able to spread it's roots underground in order to soak up oil that may have seeped into the soil and put the ground water at risk. This allows humans to safely drink the water in contaminated zones as well as help the local plant life flourish.</p>
 </div>
 
-<iframe src="test.html"></iframe>
+<div class="plants">
+<br><br>
+
+<model-viewer class="models" src="assets/exported.glb"
+            auto-rotate camera-controls
+            alt="Ohutus Ring"
+            background-color="#ffb347"
+            shadow-intensity="1"
+            stage-light-intensity="2" environment-intensity="5">
+</model-viewer>
+<br>
+  <p><b>Ohutus Ring</b><br>The plant I created is called a Ohutus Ring, its purpose is to show that an area is generally safe. It provides shade for fish to hide from predators, it serves as a home for insects and is used in calming products(tea, medication, scents and etc.). The flower grows like wildfire around lakes and is a mix of a Lily Pad and the California Poppy. It floats on top of water and is located in shadey, cool areas. It is connected to all of the other Ohutus Ring flowers around it and never stops being produced. The scent of the flower scares off large predators. It doesn’t have a large impact on climate since it is hidden under layers of trees within forests. The flower originated from being cross pollinated on the border of California and Oregon. However, it has not been genetically modified otherwise.</p>
+</div>
+
 </center>
 
 
