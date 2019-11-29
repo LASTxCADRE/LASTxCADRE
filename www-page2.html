@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LASTxCADRE</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="demo-styles.css">
+
+<!-- Loads <model-viewer> for modern browsers: -->
+<script type="module"
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+</script>
+
+<!-- Loads <model-viewer> for old browsers like IE11: -->
+<script nomodule
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
+<!-- The following libraries and polyfills are recommended to maximize browser support -->
+<!-- NOTE: you must adjust the paths as appropriate for your project -->
+
+<!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+<!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+<!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+<script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
+
+  * {
+    margin:0; padding: 0;
+  }
+
+  body {
+    width: 100%; height: 100%;
+    overflow-x: hidden;
+  }
+  .particleFrame iframe{ z-index: -999; height: 100vh; width: 100%; border: none; position: fixed;}
+
+  h1 {
+    z-index: 999;
+    font-size:3em;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+    .text {
+      width:70%;
+      background-color: #000;
+      color: #fff;
+      padding: 2vw 2vh;
+      z-index: 999;
+      font-size: 1.2em;
+      line-height: 1.5em;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .plants {
+      border-left: 8px solid #000;
+      border-right: 8px solid #000;
+      background-color: #fff;
+      width:70%;
+      color: #000;
+      z-index: 999;
+    }
+
+    .plants p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2em;
+      line-height: 1.5em;
+      text-align: left;
+      padding:10px;
+      width:70%;
+    }
+
+    .plants h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    .models {
+      width: 70%;
+      height:40vh;
+    }
+
+    .index {
+      margin: 0 auto;
+    }
+
+    .index li {
+      display: inline;
+      padding-right: 3vw;
+      text-align: center;
+      list-style-type: none;
+      color: #000;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .index li a {
+      color: #0000FF;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+
+    }
+
+</style>
+</head>
+<body>
+
+  <div class="particleFrame">
+    <iframe src="particles-copy.html"></iframe>
+  </div>
+
+<center>
+  <br><br>
+<h1>Interconnecting with the Wood Wide Web</h1>
+
+<br><br>
+
+<!-- plant #11 -->
+<div class="plants" style="border-top: 8px solid #000;">
+<br><br>
+
+<div class="sketchfab-embed-wrapper">
+  <iframe title="A 3D model" width="70%" height="320" src="https://sketchfab.com/models/bbf468443a074f94a79a0bbd3bf97632/embed?autostart=1&amp;preload=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+<br>
+  <p><b>Mauvophyta Macroalgae</b><br>This plant Lives on the surface of the Indian Ocean, and was altered in a lab by botanists and chemists to create a plant that would clean toxins and oils that have spilled into and affect our Oceans. Soon it will spread and re-seed and be carried across the whole world. When toxins are found in the ocean, the Mauvophyta macroalgae "Purple Seaweed" will absorb the toxic chemicals into its pores, and out it releases saltwater and purple mushy algae substance that falls into the lower parts of the ocean, and when eaten by fish, it tastes delicious and is able to reseed through the fishes poop.The plant does not need sunlight to survive but nearly water and toxic chemicals to absorb. This Purple Seaweed floats and is very long, its roots are attatched to large rocks or coral at the bottom of the sea floor and edge, when the plant detaches or experiences drought, the plant will release seeds to repollinte the area. This plant works well with other ocean plants and creates a clean ecosystem for the Earth's oceans. This plant is also helpful in curing human ailments when taken in small doses.</p><br>
+</div>
+
+<!-- plant #11z -->
+<div class="plants">
+<br><br>
+
+<div class="sketchfab-embed-wrapper">
+    <iframe title="A 3D model" width="70%" height="320" src="https://sketchfab.com/models/0309a768fdac4ce38c9ca181b1ae0a8a/embed?autospin=0.2&amp;autostart=1&amp;preload=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+<br>
+  <p><b>Duplicilily</b><br>In an effort to create a new way to increase fruit-bearing plant reproduction, scientists accidententally created the Duplicilily. Right as the flower was created, it almost destroyed the lab in which it was created. This is because within the petals of a Duplicilily, there are millions of tiny spores that have the ability to duplicate the flower from which they came from within 5 minutes, using only a small amount of water. Through experimentation, scientists have found out that the spores are capable of latching onto anything that creates energy, whether it be animals or other plants, or even sources of electricity like power lines or computers. Due to these extremely dangerous tendencies, the Duplicilily is currently locked away in a lab to be reproduced, being carefully monitored so that its population stays in check.</p><br>
+</div>
+
+<!-- plant #12 -->
+<div class="plants">
+<br><br>
+
+<model-viewer class="models" src="assets/Fu.glb"
+            auto-rotate camera-controls
+            alt="Fu"
+            background-color="#FFEC17"
+            shadow-intensity="1"
+            stage-light-intensity="2" environment-intensity="5">
+</model-viewer>
+<br>
+  <p><b>Fu</b><br>This plant I create is named "Fu" means "Negative" in Chinese. The purpose of this plant is to absorb the negative energy from People who is feeling depress and unhappy.This plant is created by the planet "Unhappy", Citizens in the "Unhappy" planet is trap in a upset feeling in their whole life and some of them wants to change the moods of themselves. So, the scientists from "Unhappy" invented a plant that can absorb the negative energy from people and they places "Fu" on the side of the road, so people that pass by it can be take away the negative energies and be postive. "Fu" can live in any climate, because its main purpose is to serve people that has negative energy. The "Unhappy" Planet saw that Earth has lots of negative energies around it, so they decided to share this technology with Earth. They hope that someday Earth can become a planet like them, that is fill with happiness, not hate and violence.</p><br>
+</div>
+
+<!-- plant #13 -->
+<div class="plants">
+<br><br>
+
+<model-viewer class="models" src="assets/lily.glb"
+            auto-rotate camera-controls
+            alt="Caelum Lily"
+            background-color="#acace6"
+            shadow-intensity="1"
+            stage-light-intensity="2" environment-intensity="5">
+</model-viewer>
+<br>
+  <p><b>Caelum Lily</b><br>The Caelum Lily is an extremely large flower resembling a Calla Lily. Like any other flower, it generates pollen and nectar, but to a more considerable degree considering its size. The most notable feature of the Caelum Lily is its extremely high carbon dioxide intake compared to other plants, which allows it to generate much more oxygen that multiple trees combined. The Caleum Lily was developed by the XXXXX Biological Research Facility of XXXXXXX as a way to control and reverse the damage caused by the heavy Carbon Dioxide emissions left by human society. An unintentional use of the Caelum Lily is that if can also be used to terraform planets with large hamounts of Carbon Dioxide if plants are sustainable at that point. The Caelum Lily grows by planting itself or being planted by a firm source that it can grow off of line a vine, then as it grows, wraps around the firm source. The sources can include trees, poles, large rocks, and garden fences, along with many others.</p><br>
+</div>
+
+<!-- plant #14 -->
+<div class="plants">
+<br><br>
+
+<model-viewer class="models" src="assets/Trappy.glb"
+            auto-rotate camera-controls
+            alt="Trappy"
+            background-color="#C4105B"
+            shadow-intensity="1"
+            stage-light-intensity="2" environment-intensity="5">
+</model-viewer>
+<br>
+  <p><b>Trappy</b><br>The plant I chose is called a Pitcher plant, I named it Trappy. The purpose of this plant is to trap and kill bad things because it's a carnivorous plant. This plant can make the world a better place by eliminating all the bad energy from people and trapping them as a punishment in a jail cell. Inside the plant has a deep cavity where it's filled with digestive liquid so it can dissolve things. Any bad energy that enters the plant, it will distroy it so it will never appear again.</p><br>
+</div>
+
+<!-- plant #15 -->
+<div class="plants">
+<br><br>
+
+<div class="sketchfab-embed-wrapper">
+    <iframe title="A 3D model" width="70%" height="320" src="https://sketchfab.com/models/7951dc70c64349f995c7bb8c466ec679/embed?autospin=0.2&amp;autostart=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+<br>
+  <p><b>PrismGlow</b><br>The plant I have created is called a PrismGlow. The plant itself is made to grow crystals that can illuminate. This plant has been made and genetically modified by scientists to act as a new power source instead of the sources we used today. Instead of using lightbulbs and other man made harmful sources, we use these crystals to act as a new source of light. With these we can greatly reduce the amount of light polution on our planet. The crystals from the plant only last for so long, but once used, they can be replanted to grow more PrismGlows. At first they were only accessable in labs, but now can be grown in your own homes.</p><br>
+</div>
+
+<!-- plant #16 -->
+<div class="plants" style="border-bottom: 8px solid #000;">
+<br><br>
+
+<div class="sketchfab-embed-wrapper">
+    <iframe title="A 3D model" width="70%" height="320" src="https://sketchfab.com/models/909d20cd36be40fd8cdbe6f4264677a3/embed?autospin=0.2&amp;autostart=1&amp;preload=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+<br>
+  <p><b>Eagianna</b><br>This plant is called Eagianna, which is a mutated pitcher plant that was made in ABC Science Lab of XYZ University. It is a new type of pitcher plant that has prey-trapping mechanism featuring a deep cavity filled with digestive liquid. Eagianna's food are mostly small bugs such as flies or bees. Most carnivorous plants exist in places that lack of nutrients, however, this plant often grows on fertile lands. Therefore, by feeding itself with the nutritions from both the land and the victims, Eagiannas usually produce many vines with big leaves and a giant pretty flower called Gianna. Its white flower blooms with a very nice scent to attract the bugs, but the wall inside the flower is very slippery, enough for the bug to fall into the bottom of the flower - where the digestive liquid is. The acid inside the liquid will slowly absorb the victim, and turn it into nutrients for the plant. Overall, the acid in the plant is not dangerous enough to affect human, but it has a very nice-looking flower with a pleasant scent, so scientists are looking for a way to use it as a natural solution for preventing diseases such as malaria and dengue that exist in countries with many deadly mosquitos.</p><br><br><br>
+
+  <ul class="index">
+    <li><a href="www-page1.html">1</a></li>
+    <li>2</li>
+  </ul>
+
+  <br><br><br><br>
+
+
+</div>
+
+</center>
+
+<br><br><br><br><br><br><br><br><br>
+
+
+</body>
+</html>
