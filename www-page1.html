@@ -42,6 +42,12 @@ src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
     width: 100%; height: 100%;
     overflow-x: hidden;
   }
+
+  *::selection {
+    background-color: #000;
+    color: #fff;
+  }
+
   .particleFrame iframe{ z-index: -999; height: 100vh; width: 100%; border: none; position: fixed;}
 
   h1 {
@@ -59,6 +65,18 @@ src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
       font-size: 1.2em;
       line-height: 1.5em;
       font-family: 'Montserrat', sans-serif;
+      text-align: left;
+    }
+
+
+    .text p {
+      width: 92%;
+      margin: 0 auto;
+    }
+
+    .text p::selection {
+      background-color: #04D99D;
+      color: #000;
     }
 
     .plants {
@@ -125,8 +143,13 @@ src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
 
   <br><br>
 <div class="text">
-  <b>Context for the virtual plant library goes here:</b><br><br>
-   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor eget dolor morbi non arcu. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Integer feugiat scelerisque varius morbi enim. Ultricies lacus sed turpis tincidunt id aliquet risus. Tortor at risus viverra adipiscing at in. Non quam lacus suspendisse faucibus interdum posuere lorem. Maecenas ultricies mi eget mauris pharetra et ultrices. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor.
+  <br><b style="font-size: 1.4em;"><center>The Internet of Living Things</center></b><br>
+  <p>This series emerges from the workshop <i>From Storytelling to Story Living</i> convened in October 2019. The workshop strives to envision a sustainable future through collective design thinking. For most of art history, the vegetal world has been a static backdrop to human endeavors. More than animals, in popular conceptions, plants are ontologically aligned with "the resource" and "the medium" more than the living (Aloi 2019, xxix). I facilitated a plaftorm for creativity and speculation where participants were invited to imagine and build prototypes of plant life in 2121.<br><br>
+  In order to intervene into current attitudes towards climate change and sustainability, we must shift our perspective from viewing plants as passive objects and give them the agency to nurture and restore nature. The works displayed introduce us to various artistic expressions on technobotanic futurity. Each workshop participant has "grown" a virtual plant that inhabits the  World Wide Web and potentially interconnects with the Wood Wide Web—an underground network of Mycorrhizal Fungi that 90% of trees and plants exchange information and resources through; in other words, it is the Internet of Living Things.<br><br>
+  Design Fiction was our approach to explore and criticize future scenarios through hands-on fabrication and storytelling. Participants were invited to engage with a fictional narrative describing their virtual plant, which they modeled using Play-Doh as a creative prototyping exercise. 3D scans of the virtual plants were developed subsequent to the modeling process, leading to the completion of this WebGL archive.
+
+  <br><br><br><br><span style="text-align:right;">Organizer: <b>Leily Khatibi</b></span><br><br></p>
+
 </div>
 
 <br><br>
