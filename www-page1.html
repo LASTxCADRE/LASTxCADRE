@@ -32,7 +32,7 @@ src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
+
 
   * {
     margin:0; padding: 0;
@@ -41,6 +41,33 @@ src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
   body {
     width: 100%; height: 100%;
     overflow-x: hidden;
+
+    background: linear-gradient(-90deg, #F2B3E1, #A599F2, #04C4D9, #04D99D, #F2E5A0);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  animation-direction:alternate;
+  }
+
+  @keyframes gradientBG {
+  25% {
+    background-position: 0% 25%;
+  }
+  50% {
+    background-position: 25% 50%;
+  }
+  75% {
+    background-position: 50% 75%;
+  }
+
+  100% {
+    background-position: 75% 100%;
+  }
+
+
+
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
   }
 
   *::selection {
@@ -64,7 +91,7 @@ src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
       z-index: 999;
       font-size: 1.2em;
       line-height: 1.5em;
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Roboto Mono', monospace;
       text-align: left;
     }
 
@@ -126,16 +153,38 @@ src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
       color: #0000FF;
       font-weight: 700;
       font-family: 'Montserrat', sans-serif;
+    }
 
+    #last {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    #footer {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 1em;
+      line-height: 1.2em;
+      width:120px;
+      height:120px;
+      position: fixed;
+      left:0; bottom: 0;
+
+      -webkit-box-shadow: 10px -10px 20px 2px rgba(0,0,0,0.4);
+-moz-box-shadow: 10px -10px 20px 2px rgba(0,0,0,0.4);
+box-shadow: 10px -10px 20px 2px rgba(0,0,0,0.4);
+    }
+
+    #footer p {
+      text-align: center;
+      padding-top: 40px;
     }
 
 </style>
 </head>
 <body>
 
-  <div class="particleFrame">
-    <iframe src="particles-copy.html"></iframe>
-  </div>
 
 <center>
   <br><br>
@@ -144,11 +193,12 @@ src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
   <br><br>
 <div class="text">
   <br><b style="font-size: 1.4em;"><center>The Internet of Living Things</center></b><br>
-  <p>This series emerges from the workshop <i>From Storytelling to Story Living</i> convened in October 2019. The workshop strives to envision a sustainable future through collective design thinking. For most of art history, the vegetal world has been a static backdrop to human endeavors. More than animals, in popular conceptions, plants are ontologically aligned with "the resource" and "the medium" more than the living (Aloi 2019, xxix). I facilitated a plaftorm for creativity and speculation where participants were invited to imagine and build prototypes of plant life in 2121.<br><br>
-  In order to intervene into current attitudes towards climate change and sustainability, we must shift our perspective from viewing plants as passive objects and give them the agency to nurture and restore nature. The works displayed introduce us to various artistic expressions on technobotanic futurity. Each workshop participant has "grown" a virtual plant that inhabits the  World Wide Web and potentially interconnects with the Wood Wide Web—an underground network of Mycorrhizal Fungi that 90% of trees and plants exchange information and resources through; in other words, it is the Internet of Living Things.<br><br>
-  Design Fiction was our approach to explore and criticize future scenarios through hands-on fabrication and storytelling. Participants were invited to engage with a fictional narrative describing their virtual plant, which they modeled using Play-Doh as a creative prototyping exercise. 3D scans of the virtual plants were developed subsequent to the modeling process, leading to the completion of this WebGL archive.
+  <p>This series of virtual plants archive emerges from the workshop <i>From Storytelling to Story Living</i> convened in October 2019. The workshop strives to envision a sustainable future through collective design thinking. Historically, the vegetal world has been a static backdrop to human endeavors. More than animals, in popular conceptions, plants are ontologically aligned with "the resource" and "the medium" more than the living (Aloi 2019, xxix). I facilitated a plaftorm for creativity and speculation where participants were invited to imagine and build prototypes of plant life in 2121.<br><br>
+  We used Design Fiction to explore and criticize future scenarios through hands-on fabrication and storytelling. Participants were invited to engage with a fictional narrative describing their virtual plant, which they modeled using Play-Doh as a creative prototyping exercise. 3D scans of the virtual plants were developed subsequent to the modeling process, leading to the completion of this WebGL archive.<br><br>
+  In order to intervene into current attitudes towards climate change and sustainability, we must shift our perspective from viewing plants as passive objects and give them the agency to nurture and restore nature. The works displayed introduce us to various artistic expressions on technobotanic futurity. Each workshop participant has "grown" a virtual plant that inhabits the  World Wide Web and potentially interconnects with the Wood Wide Web—an underground network of Mycorrhizal Fungi that 90% of trees and plants exchange information and resources through; in other words, it is the Internet of Living Things.
 
-  <br><br><br><br><span style="text-align:right;">Organizer: <b>Leily Khatibi</b></span><br><br></p>
+
+  <br><br><br><span style="text-align:right;">Organizer: <b>Leily Khatibi</b></span><br><br></p>
 
 </div>
 
@@ -310,6 +360,10 @@ The Drip Tip has not yet been modified by technology but it has been mutated hum
 
 <br><br><br><br><br><br><br><br><br>
 
+<a href="http://lastxcadre.github.io/"><footer id="footer">
+   <p>&#8592; Back to <br>
+  LASTxCADRE</p>
+</footer></a>
 
 </body>
 </html>
